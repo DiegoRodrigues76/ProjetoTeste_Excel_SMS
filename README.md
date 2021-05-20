@@ -2,9 +2,9 @@ import pandas as pd
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "AC4f209123cb1bd8ece87d1922b3c37e95"
+account_sid = "xxxxxxxxxxxxxxxxxx"
 # Your Auth Token from twilio.com/console
-auth_token  = "1f060569e4c612d19e436c85d71094ef"
+auth_token  = "xxxxxxxxxxxxxxxxxx"
 client = Client(account_sid, auth_token)
 
 # Abrir os 6 arquivos em Excel
