@@ -1,5 +1,3 @@
-# ProjetoTeste_Excel_SMS
-
 import pandas as pd
 from twilio.rest import Client
 
@@ -18,7 +16,7 @@ for mes in lista_meses:
         vendas = tabela_vendas.loc[tabela_vendas['Vendas'] > 55000, 'Vendas'].values[0]
         print(f'No mês {mes} alguém bateu a meta. Vendedor: {vendedor}, Vendas: {vendas}')
         message = client.messages.create(
-            to="+5581999241460",
-            from_="+12136994181",
+            to="xxxxxxxxx",
+            from_="xxxxxxxxx",
             body=f'No mês {mes} alguém bateu a meta. Vendedor: {vendedor}, Vendas: {vendas}')
 print(message.sid)
